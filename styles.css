@@ -1,6 +1,10 @@
 input, textarea, select {
-    display: block;
-    margin: 0.5rem 0;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
 }
 .demo2 {
     display: inline;
@@ -9,5 +13,26 @@ input, textarea, select {
 
 fieldset {
     margin-bottom: 1rem;
-    margin-right: 83rem;
+    margin-top: 2rem;
+    border-radius: 4px;
 }
+
+label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+}
+
+  form {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 2px 16px;
+    margin: 2px 20px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .submit {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  
