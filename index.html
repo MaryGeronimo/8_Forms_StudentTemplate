@@ -23,19 +23,23 @@
         <input type='email' id="email" name='email' placeholder='a@a.com'>
         
         <label for="password">Password:</label>
-        <input type='password' id="password" name='password'>
+        <input type='password' id="password" name='password' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder='Pa55word1'>
+       
 
         <label for="tel">Telephone Number:</label>
-        <input type='tel' id="tel" name='tel'>
+        <input type='tel' id="tel" name='tel' maxlength="11">
 
         <label for="dob">Date of Birth:</label>
         <input type='date' id="dob" name='dob' placeholder='01/01/2001'>
       
+        <fieldset>
         <label for="signup">I would like to sign up:</label>
         <input type="radio" id="signupYes" name="signup" value="Yes">
         <label for="Yes">Yes</label><br>
         <input type="radio" id="signupNo" name="signup" value="No">
         <label for="No">No</label><br>
+      </fieldset>
 
         <label for="options">Starsign:</label>
         <select id="options" name="options">
@@ -44,6 +48,7 @@
           <option value="3">Scorpio</option>
         </select>
         
+        <input type="submit">
  
       </form>
 
@@ -83,7 +88,7 @@
         </select>
       </form> -->
       
-      <!-- <h2>Demo 4</h2>
+      <!--<h2>Demo 4</h2>
       <form action="#">
         <h3>select</h3>
         <label for="options">DropDown:</label>
@@ -94,7 +99,7 @@
         </select>
 
         <h3>validation</h3>
-        <input type="email" name="example" id="example" required>
+        <input type="number" max="5" name="example" id="example" required>
         <input type="submit">
       </form> -->
 
