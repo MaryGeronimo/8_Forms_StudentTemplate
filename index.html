@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Class 8 - Form Processing</title>
   </head>
   <body>
-      <h1>Class 8 - Form Processing</h1>
-            
-      <h2>Example</h2>
-      <form action="#">
- 
-        <label for="name">Username:</label><br />
-        <input required type='text' id="name" name='name' placeholder='name' >
-        
-        <label for="email">Email:</label>
-        <input type='email' id="email" name='email' placeholder='a@a.com'>
-        
-        <label for="password">Password:</label>
-        <input type='password' id="password" name='password' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder='Pa55word1'>
-       
+    <h1>Class 8 - Form Processing</h1>
 
-        <label for="tel">Telephone Number:</label>
-        <input type='tel' id="tel" name='tel' maxlength="11">
+    <h2>Example</h2>
+    <form action="#">
+      <legend>
+        <label for="name">Username:</label><br/>
+        <input required type="text" id="name" name="name" placeholder="name" /><br/>
+  
+        <label for="email">Email:</label><br/>
+        <input type="email" id="email" name="email" placeholder="a@a.com" /><br/>
+  
+        <label for="password">Password:</label><br/>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+          placeholder="Pa55word1"
+        /><br/>
+  
+        <label for="tel">Telephone Number:</label><br/>
+        <input type="tel" id="tel" name="tel" maxlength="11" /><br/>
+  
+        <label for="dob">Date of Birth:</label><br/>
+        <input type="date" id="dob" name="dob" placeholder="01/01/2001" />
+      </legend>
 
-        <label for="dob">Date of Birth:</label>
-        <input type='date' id="dob" name='dob' placeholder='01/01/2001'>
-      
-        <fieldset>
-        <label for="signup">I would like to sign up:</label>
-        <input type="radio" id="signupYes" name="signup" value="Yes">
-        <label for="Yes">Yes</label><br>
-        <input type="radio" id="signupNo" name="signup" value="No">
-        <label for="No">No</label><br>
+      <fieldset class="signup">
+        <h3>Would you like to sign up?</h3>
+        <input type="radio" id="signupYes" name="signup" value="Yes" />
+        <label for="signupYes">Yes</label><br />
+        <input type="radio" id="signupNo" name="signup" value="No" />
+        <label for="signupNo">No</label><br />
       </fieldset>
 
-        <label for="options">Starsign:</label>
-        <select id="options" name="options">
-          <option value="1">Aries</option>
-          <option value="2">Taurus</option>
-          <option value="3">Gemini</option>
-          <option value="4">Cancer</option>
-          <option value="5">Leo</option>
-          <option value="6">Virgo</option>
-          <option value="7">Libra</option>
-          <option value="8">Scorpio</option>
-          <option value="9">Sagittarius</option>
-          <option value="10">Capricorn</option>
-          <option value="11">Aquarius</option>
-          <option value="12">Pisces</option>
-        </select>
-        
-        <input type="submit" class="submit">
- 
-      </form>
+      <label for="options">Starsign:</label>
+      <select id="options" name="options">
+        <option value="1">Aries</option>
+        <option value="2">Taurus</option>
+        <option value="3">Gemini</option>
+        <option value="4">Cancer</option>
+        <option value="5">Leo</option>
+        <option value="6">Virgo</option>
+        <option value="7">Libra</option>
+        <option value="8">Scorpio</option>
+        <option value="9">Sagittarius</option>
+        <option value="10">Capricorn</option>
+        <option value="11">Aquarius</option>
+        <option value="12">Pisces</option>
+      </select>
 
-      <!-- <h2>Demo 2</h2>
+      <input type="submit" class="submit" />
+    </form>
+
+    <!-- <h2>Demo 2</h2>
         <form action="#">
           <fieldset>
             <legend>CheckBox</legend>
@@ -83,7 +88,7 @@
             <input type="submit">
         </form> -->
 
-      <!-- <h2>Demo 3</h2>
+    <!-- <h2>Demo 3</h2>
       <form action="#">
         <h3>select</h3>
         <label for="options">DropDown:</label>
@@ -93,8 +98,8 @@
           <option value="3">Low</option>
         </select>
       </form> -->
-      
-      <!--<h2>Demo 4</h2>
+
+    <!--<h2>Demo 4</h2>
       <form action="#">
         <h3>select</h3>
         <label for="options">DropDown:</label>
@@ -109,7 +114,7 @@
         <input type="submit">
       </form> -->
 
-      <!-- <h2>Demo 5</h2>
+    <!-- <h2>Demo 5</h2>
       <form action="" id="loginForm">
         <h3>Login</h3>
         <input type="text" id="username" class="form-control" placeholder="Enter your Username...">
@@ -132,7 +137,7 @@
         });
       </script> -->
 
-      <!-- <h2>Demo 6</h2>
+    <!-- <h2>Demo 6</h2>
       <a href="https://youtube.com/shorts/HFMfn_XBdyo?si=L8ita-eeViqmZt3u">Example of how to create form on Netlify</a>
       <form name="example" netlify>
         <h3>Details</h3>
